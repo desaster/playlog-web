@@ -84,7 +84,7 @@ class TTYLog {
     //   empty string:  packet with no text data
     //   null:          eof was reached, don't call anymore
     async tick(): Promise<string | null> {
-        const delayval = <T>(val: any, ms: number): Promise<T> =>
+        const delayval = <T>(val: T, ms: number): Promise<T> =>
             new Promise(resolve => setTimeout(() => resolve(val), ms));
 
         if (this.pos >= this.data.length - 1) {
@@ -163,7 +163,7 @@ async function startup() {
     };
 }
 
-async function binread(filename: string): Promise<any> {
+async function binread(filename: string): Promise<Uint8Array> {
     return new Promise(function(resolve, reject) {
         const xhr = new XMLHttpRequest();
         xhr.open('GET', filename, true);
