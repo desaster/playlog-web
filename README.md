@@ -31,7 +31,8 @@ Here are some interesting demos from back in the day:
 
 ## Building
 
-Simply run: `npm run build`, and some files should appear in `dist/`.
+First install the npm packages: `npm install`.
+Then, simply run: `npm run build`, and some files should appear in `dist/`.
 
 ## How to use?
 
