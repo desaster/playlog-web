@@ -6,9 +6,8 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    index: 'playlog.html',
     port: 5042,
-    // host: '0.0.0.0',
-    // public: 'example.org' 
+    contentBase: path.join(__dirname, 'assets')
   },
 });
