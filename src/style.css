@@ -1,0 +1,14 @@
+body {
+  font-family: Source Sans Pro, sans-serif;
+  color: #999887;
+}
+a {
+  color: #666598;
+}
+a:hover {
+  color: #8887af;
+}
+.footer {
+  padding: 10px;
+  text-align: right;
+}
