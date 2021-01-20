@@ -137,6 +137,10 @@ async function startup() {
         return;
     }
 
+    // update h1 tag with logfile
+    const h = document.querySelector("h1#playlog-title");
+    h.innerHTML = filename;
+
     // initialize xterm.js
     const term = new Terminal({ convertEol: true });
     const elem = document.getElementById('terminal');
